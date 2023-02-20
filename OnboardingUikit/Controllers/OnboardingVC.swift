@@ -33,6 +33,12 @@ class OnboardingVC: UIViewController {
         ImageHelper.item2,
         ImageHelper.item3
     ]
+    
+    let bgArray = [
+        ImageHelper.bg1,
+        ImageHelper.bg2,
+        ImageHelper.bg3
+    ]
 }
 
 // MARK: - View Life Cycle
@@ -100,6 +106,8 @@ UICollectionViewDelegateFlowLayout {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCellCollectionViewCell", for: indexPath) as! OnboardingCellCollectionViewCell
         cell.artImageWidthConstraint.constant = normalize(value: 260.0)
         cell.artImageView.image = imageArray[indexPath.row]
+        cell.bgImageView.image = bgArray[indexPath.row]
+
         cell.headingLabel.text = titleArray[indexPath.row]
         cell.subHeadingLabel.text = subTitleArray[indexPath.row]
 
