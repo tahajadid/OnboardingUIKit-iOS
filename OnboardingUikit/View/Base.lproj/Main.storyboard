@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mq-9b-ob4">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mq-9b-ob4">
                                 <rect key="frame" x="317" y="79" width="56" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="YEM-oC-u7Y"/>
@@ -31,6 +31,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Skip"/>
+                                <connections>
+                                    <action selector="skipButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9jf-3e-5eS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBA-a3-rmd">
                                 <rect key="frame" x="20" y="728" width="166.66666666666666" height="50"/>
@@ -43,6 +46,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signupButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppZ-v8-tKj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7U-j9-aTY">
                                 <rect key="frame" x="206.66666666666663" y="728" width="166.33333333333337" height="50"/>
@@ -55,6 +61,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VyA-I3-KGo"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="k0P-Hk-aUe">
                                 <rect key="frame" x="20" y="119" width="353" height="589"/>
@@ -113,6 +122,9 @@
                                 <rect key="frame" x="53" y="682" width="293" height="26"/>
                                 <color key="pageIndicatorTintColor" name="PrimaryColor"/>
                                 <color key="currentPageIndicatorTintColor" name="SecondryColor"/>
+                                <connections>
+                                    <action selector="pageValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="7NT-DE-waC"/>
+                                </connections>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -135,6 +147,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Mq-9b-ob4" secondAttribute="trailing" constant="20" id="ysw-cb-Dnc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="k0P-Hk-aUe" id="UmN-HT-s1l"/>
+                        <outlet property="loginButton" destination="q7U-j9-aTY" id="7Cb-8W-ZDP"/>
+                        <outlet property="pageControl" destination="YfW-2g-HzR" id="yjN-kY-0Dw"/>
+                        <outlet property="signupButton" destination="SBA-a3-rmd" id="NpJ-FS-eOq"/>
+                        <outlet property="skipButton" destination="0Mq-9b-ob4" id="0jU-Qc-YAR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
