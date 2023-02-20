@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C5AC9DD29A377A200723BD4 /* bufally.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C5AC9DC29A377A200723BD4 /* bufally.ttf */; };
 		1C5C65F029A36CB600F39959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C65EF29A36CB600F39959 /* AppDelegate.swift */; };
 		1C5C65F229A36CB600F39959 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C65F129A36CB600F39959 /* SceneDelegate.swift */; };
 		1C5C65F729A36CB600F39959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C65F529A36CB600F39959 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C5AC9DC29A377A200723BD4 /* bufally.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bufally.ttf; sourceTree = "<group>"; };
 		1C5C65EC29A36CB600F39959 /* OnboardingUikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingUikit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5C65EF29A36CB600F39959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C5C65F129A36CB600F39959 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		1C5AC9DB29A3736400723BD4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				1C5AC9DC29A377A200723BD4 /* bufally.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			files = (
 				1C5C65FC29A36CB800F39959 /* LaunchScreen.storyboard in Resources */,
 				1C5C65F929A36CB800F39959 /* Assets.xcassets in Resources */,
+				1C5AC9DD29A377A200723BD4 /* bufally.ttf in Resources */,
 				1C5C65F729A36CB600F39959 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +483,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B379B8Y2BC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OnboardingUikit/Info.plist;
+				INFOPLIST_FILE = OnboardingUikit/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -507,7 +511,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B379B8Y2BC;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = OnboardingUikit/Info.plist;
+				INFOPLIST_FILE = OnboardingUikit/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
