@@ -41,7 +41,17 @@ extension OnboardingVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        signupButton.layer.cornerRadius = 12
+        loginButton.layer.cornerRadius = 12
+        
+        signupButton.isHidden = true
+        loginButton.isHidden = true
+        
+        pageControl.page = 0
+        skipShow(0 != 2)
+
     }
     
 }
@@ -49,6 +59,8 @@ extension OnboardingVC {
 // MARK: - IBActions
 extension OnboardingVC {
     @IBAction func skipButtonAction(_ sender: UIButton) {
+        showItem(at: 2)
+        skipShow(true)
     }
     
     @IBAction func signupButtonAction(_ sender: UIButton) {
@@ -71,7 +83,7 @@ extension OnboardingVC {
     }
     
     private func showItem(at index: Int){
-        skipShow(index != 2)
+        skipShow(index == 2)
         pageControl.page = pageControl.currentPage
         let indexPath = IndexPath(item: index, section: 0)
         collectionView.scrollToItem(at: indexPath, at: [.centeredHorizontally,.centeredVertically], animated: true)
@@ -82,10 +94,16 @@ extension OnboardingVC {
 extension OnboardingVC: UICollectionViewDelegate, UICollectionViewDataSource,
 UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return titleArray.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCellCollectionViewCell", for: indexPath) as! OnboardingCellCollectionViewCell
+        cell.artImageWidthConstraint.constant = normalize(value: 260.0)
+        cell.artImageView.image = imageArray[indexPath.row]
+        cell.headingLabel.text = titleArray[indexPath.row]
+        cell.subHeadingLabel.text = subTitleArray[indexPath.row]
+
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -109,12 +127,21 @@ extension UIPageControl {
         }
         set {
             currentPage = newValue
-            setIndicatorImage(ImageHelper.pageSelected, forPage: newValue)
+            
             
             for index in 0..<numberOfPages where index != newValue {
+                setIndicatorImage(ImageHelper.pageUnselected, forPage: index)
                 preferredIndicatorImage = ImageHelper.pageUnselected
             }
+            
+            
+            setIndicatorImage(ImageHelper.pageSelected, forPage: newValue)
         }
         
      }
+}
+
+func normalize(value: CGFloat) -> CGFloat {
+    let scale = UIScreen.main.bounds.width / 375.0
+    return value*scale
 }

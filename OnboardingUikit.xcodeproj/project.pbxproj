@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C5AC9DD29A377A200723BD4 /* bufally.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C5AC9DC29A377A200723BD4 /* bufally.ttf */; };
 		1C5AC9E029A384AE00723BD4 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AC9DF29A384AE00723BD4 /* ImageHelper.swift */; };
+		1C5AC9E329A3AB5E00723BD4 /* OnboardingCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5AC9E229A3AB5E00723BD4 /* OnboardingCellCollectionViewCell.swift */; };
 		1C5C65F029A36CB600F39959 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C65EF29A36CB600F39959 /* AppDelegate.swift */; };
 		1C5C65F229A36CB600F39959 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5C65F129A36CB600F39959 /* SceneDelegate.swift */; };
 		1C5C65F729A36CB600F39959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5C65F529A36CB600F39959 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		1C5AC9DC29A377A200723BD4 /* bufally.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bufally.ttf; sourceTree = "<group>"; };
 		1C5AC9DF29A384AE00723BD4 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		1C5AC9E229A3AB5E00723BD4 /* OnboardingCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C5C65EC29A36CB600F39959 /* OnboardingUikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnboardingUikit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5C65EF29A36CB600F39959 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C5C65F129A36CB600F39959 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		1C5AC9E129A3AB1E00723BD4 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1C5AC9E229A3AB5E00723BD4 /* OnboardingCellCollectionViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		1C5C65E329A36CB600F39959 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +129,7 @@
 		1C5C65EE29A36CB600F39959 /* OnboardingUikit */ = {
 			isa = PBXGroup;
 			children = (
+				1C5AC9E129A3AB1E00723BD4 /* CustomViews */,
 				1C5AC9DE29A3849400723BD4 /* Constants */,
 				1C5C662129A36E4500F39959 /* Application */,
 				1C5C661F29A36E1500F39959 /* Controllers */,
@@ -314,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C5C662429A36F7100F39959 /* OnboardingVC.swift in Sources */,
+				1C5AC9E329A3AB5E00723BD4 /* OnboardingCellCollectionViewCell.swift in Sources */,
 				1C5C65F029A36CB600F39959 /* AppDelegate.swift in Sources */,
 				1C5C65F229A36CB600F39959 /* SceneDelegate.swift in Sources */,
 				1C5AC9E029A384AE00723BD4 /* ImageHelper.swift in Sources */,
