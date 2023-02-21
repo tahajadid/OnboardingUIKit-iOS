@@ -17,15 +17,15 @@ class OnboardingVC: UIViewController {
     @IBOutlet weak var skipButton: UIButton!
     
     let titleArray = [
-        "Numerous Title \nnumber SOUR",
-        "Numerous Title \nnumber Second",
-        "Numerous Title \nnumber Third"
+        "Painter job",
+        "Pizza Maker  job",
+        "Waiter job"
     ]
 
     let subTitleArray = [
-        "Numerous SubTitlte \nnumber SOUR",
-        "Numerous SubTitlte \nnumber Second",
-        "Numerous SubTitlte \nnumber Third"
+        "> SubTitlte \nnumber 1",
+        "> SubTitlte \nnumber 2",
+        "> SubTitlte \nnumber 3",
     ]
     
     let imageArray = [

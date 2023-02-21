@@ -93,14 +93,14 @@
                                                         <constraint firstAttribute="height" constant="260" id="tlg-Dh-vF2"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXg-ze-3Nf">
-                                                    <rect key="frame" x="67.666666666666686" y="320" width="260" height="27.666666666666686"/>
-                                                    <fontDescription key="fontDescription" name="BufallyScript" family="Bufally Script" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXg-ze-3Nf">
+                                                    <rect key="frame" x="67.666666666666686" y="320" width="260" height="32.333333333333314"/>
+                                                    <fontDescription key="fontDescription" name="BufallyScript" family="Bufally Script" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="128-qP-TXj">
-                                                    <rect key="frame" x="67.666666666666686" y="367.66666666666669" width="260" height="22.666666666666686"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="128-qP-TXj">
+                                                    <rect key="frame" x="67.666666666666686" y="372.33333333333331" width="260" height="22.666666666666686"/>
                                                     <fontDescription key="fontDescription" name="BufallyScript" family="Bufally Script" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
