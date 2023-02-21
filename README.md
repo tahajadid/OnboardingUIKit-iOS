@@ -1,5 +1,8 @@
 # OnboardingUIKit-iOS
 
+## Demo
+
+<img src="./demo.gif" width="230" height="500"/>
 
 ## Inspired from 
 
