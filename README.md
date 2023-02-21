@@ -5,5 +5,5 @@
 
 <center>
 <a href="https://www.youtube.com/watch?v=l_S3JJRYOog">
-<img src="./youtube_icon.jpg" width="180" height="70"/></a>
+<img src="./youtube_icon.png" width="100" height="60"/></a>
 </center>
