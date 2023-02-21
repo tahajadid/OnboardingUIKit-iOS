@@ -17,21 +17,27 @@ class OnboardingVC: UIViewController {
     @IBOutlet weak var skipButton: UIButton!
     
     let titleArray = [
-        "Numerous Title \nnumber SOUR",
-        "Numerous Title \nnumber Second",
-        "Numerous Title \nnumber Third"
+        "Painter job",
+        "Pizza Maker  job",
+        "Waiter job"
     ]
 
     let subTitleArray = [
-        "Numerous SubTitlte \nnumber SOUR",
-        "Numerous SubTitlte \nnumber Second",
-        "Numerous SubTitlte \nnumber Third"
+        "> SubTitlte \nnumber 1",
+        "> SubTitlte \nnumber 2",
+        "> SubTitlte \nnumber 3",
     ]
     
     let imageArray = [
         ImageHelper.item1,
         ImageHelper.item2,
         ImageHelper.item3
+    ]
+    
+    let bgArray = [
+        ImageHelper.bg1,
+        ImageHelper.bg2,
+        ImageHelper.bg3
     ]
 }
 
@@ -100,6 +106,8 @@ UICollectionViewDelegateFlowLayout {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCellCollectionViewCell", for: indexPath) as! OnboardingCellCollectionViewCell
         cell.artImageWidthConstraint.constant = normalize(value: 260.0)
         cell.artImageView.image = imageArray[indexPath.row]
+        cell.bgImageView.image = bgArray[indexPath.row]
+
         cell.headingLabel.text = titleArray[indexPath.row]
         cell.subHeadingLabel.text = subTitleArray[indexPath.row]
 

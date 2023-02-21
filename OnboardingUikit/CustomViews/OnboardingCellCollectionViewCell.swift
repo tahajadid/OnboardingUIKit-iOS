@@ -13,4 +13,5 @@ class OnboardingCellCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var subHeadingLabel: UILabel!
     @IBOutlet weak var headingLabel: UILabel!
     @IBOutlet weak var artImageView: UIImageView!
+    @IBOutlet weak var bgImageView: UIImageView!
 }
