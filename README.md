@@ -1,5 +1,7 @@
 # OnboardingUIKit-iOS
 
+This sample project contains 3 screens for onboarding, with the ability of scrolling.
+
 ## Demo
 
 <img src="./demo.gif" width="230" height="500"/>
